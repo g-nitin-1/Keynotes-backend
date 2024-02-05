@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect("mongodb+srv://"+process.env.USER+":"+process.env.PASSWORD+"@cluster0.e93l9ic.mongodb.net/notesDB",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://"+process.env.USER+":"+process.env.PASSWORD+"@myatlasclusteredu.uxwp7cf.mongodb.net/notesDB",{useNewUrlParser:true});
 // mongoose.connect("mongodb://localhost:27017/notesDB",{useNewUrlParser:true});
 
 const notesSchema = new mongoose.Schema({
